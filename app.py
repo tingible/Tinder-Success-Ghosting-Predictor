@@ -23,9 +23,7 @@ st.header('Step 1: Enter Tinder Profile/Conversation Info')
 
 with st.container():
     st.subheader(':orange[Profile-related info]')
-    col1 = st.columns(1)
-    with col1:
-        Num_of_matches_vs_likes = st.number_input('% of matches vs right swipes', min_value=1, max_value=100)
+    Num_of_matches_vs_likes = st.number_input('% of matches vs right swipes', min_value=1, max_value=100)
 
 with st.container():
     st.subheader(':orange[Convo-related info]')
