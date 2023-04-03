@@ -40,7 +40,7 @@ Attractiveness_indicator = Num_of_matches_vs_likes / 100
 Positive_Neutral_proportion = Positive_percent / 100
 
 # Separate to X and y
-X = df.drop(['Label','User','Match_id'], axis=1)
+X = df.drop(['Label','User','Match_id','Pickiness_indicator'], axis=1)
 y = df.Label
 
 # Split data
