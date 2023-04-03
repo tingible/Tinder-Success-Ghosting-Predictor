@@ -29,9 +29,9 @@ with st.container():
     st.subheader(':orange[Convo-related info]')
     col1, col2, col3 = st.columns(3)
     with col1:
-        Num_messages = st.slider('Number of messages exchanged', 1, 3000,100)
+        Num_messages = st.slider('Number of messages exchanged', 1, 500,100)
     with col2:
-        Message_word_count = st.slider('Estimated length of messages in word count', 1, 200, 5)
+        Message_word_count = st.slider('Estimated length of messages in word count', 1, 50, 5)
     with col3:
         Positive_percent = st.slider('% of positive vibes', 0, 100, 50)
 
@@ -51,7 +51,7 @@ model = KNeighborsClassifier(n_neighbors=14)
 model.fit(X_train, y_train)
 
 # Generate prediction based on user selected attributes
-y_pred = model.predict([[Num_messages, Message_word_count, Positive_proportion, Attractiveness_indicator])
+y_pred = model.predict([[Num_messages, Message_word_count, Positive_proportion, Attractiveness_indicator]])
 
 # Generate label name based on y_pred results
 if y_pred == 1:
