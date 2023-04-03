@@ -51,7 +51,7 @@ model = KNeighborsClassifier(n_neighbors=14)
 model.fit(X_train, y_train)
 
 # Generate prediction based on user selected attributes
-y_pred = model.predict([[Num_messages, Message_word_count, Positive_proportion, Attractiveness_indicator])
+y_pred = model.predict([[Num_messages, Message_word_count, Positive_proportion, Attractiveness_indicator]])
 
 # Generate label name based on y_pred results
 if y_pred == 1:
