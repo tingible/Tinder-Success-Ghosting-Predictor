@@ -29,9 +29,9 @@ with st.container():
     st.subheader(':orange[Convo-related info]')
     col1, col2, col3 = st.columns(3)
     with col1:
-        Num_messages = st.slider('Number of messages exchanged', 1, 3000,100)
+        Num_messages = st.slider('Number of messages exchanged', 1, 200,30)
     with col2:
-        Message_word_count = st.slider('Estimated length of messages in word count', 1, 200, 5)
+        Message_word_count = st.slider('Estimated length of messages in word count', 1, 100, 5)
     with col3:
         Positive_percent = st.slider('% of positive vibes', 0, 100, 50)
 
