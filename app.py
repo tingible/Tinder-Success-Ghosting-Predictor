@@ -61,7 +61,7 @@ else:
 
 # Print input features
 st.subheader(':orange[Summary of Tinder Conversation/Profile Features]')
-input_feature = pd.DataFrame([[Attractiveness_indicator, Num_messages, Message_word_count, Positive_propotion]],
+input_feature = pd.DataFrame([[Attractiveness_indicator, Num_messages, Message_word_count, Positive_Neutral_proportion]],
                             columns=['Attractiveness Indicator','Number of messages exchanged',
                                      'Estimated length of messages in word count', '% of positive vibes'])
 st.write(input_feature)
